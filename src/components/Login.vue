@@ -5,8 +5,10 @@
         <img src alt />
       </div>
       <!-- 表单 -->
+      
       <el-form :label-position="labelPosition" label-width="80px"
       :model="form" :rules="loginFormRules" ref="loginFromRef">
+      
         <el-form-item label="用户名" prop="username">
           <el-input v-model="form.username" type="text"></el-input>
         </el-form-item>
@@ -28,8 +30,8 @@ export default {
       return {
         labelPosition: 'right',
         form: {
-          username: '',
-          password: ''
+          username: 'admin',
+          password: '123456'
         },
         loginFormRules:{
           username:[
